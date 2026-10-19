@@ -34,11 +34,16 @@ proof(ejercicio02,
 
 proof(ejercicio03,
       [
-      'Premisa'(1),
-      'Premisa'(3),
-      'E' --> (1, 2),
-      'Premisa'(2),
-      'E' --> (4, 3)
+           'Premisa'(1),
+            'Premisa'(2),
+            'Supuesto'(p and q),
+            'E' --> (1,3),
+            'E' and a(3),
+            'E' and b(3),
+            'I' and (4,2),
+            'I' --> (3,7),
+            'I' ! (8),
+            'DeMorganA'(9)
       ]).
 
 % Incluir el resto de demostraciones
