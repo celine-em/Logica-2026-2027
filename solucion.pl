@@ -12,7 +12,7 @@
 
 alumno('Celine Elisa Mihailescu Vlad', 'jc.mihailescu.2024@alumnos.urjc.es', 'Ciber').
 
-
+%%xd
 %% Este ejercicio esta ya resuelto
 proof(ejercicio01,
       [
