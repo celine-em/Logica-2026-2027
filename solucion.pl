@@ -72,7 +72,7 @@ proof(ejercicio05,
         'I' and (10,3),
         'I' --> (8,11),
         'I' ! (12)
-      ]
+      ]).
 
 proof(ejercicio06,
       [
@@ -87,7 +87,7 @@ proof(ejercicio06,
       'I' --> (5,8),
       'I' ! (9),
       'I' --> (2,10)
-      ]
+      ]).
 
 proof(ejercicio07,
       [
@@ -102,7 +102,7 @@ proof(ejercicio07,
       'I' --> (4,8),
       'I' ! (9),
       'E' ! (10)
-      ]
+      ]).
 
 % Incluir el resto de demostraciones
 
