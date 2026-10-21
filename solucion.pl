@@ -57,6 +57,53 @@ proof(ejercicio04,
         'E' --> (3,6)
       ]).
 
+proof(ejercicio05,
+      [
+        'Premisa'(1),
+        'Premisa'(2),
+        'Premisa'(3),
+        'Supuesto'(p),
+        'Supuesto'(q),
+        'I' --> (5,4),
+        'I' --> (4,4),
+        'Supuesto'(p),
+        'E' --> (1,8),
+        'Corte'(9,2),
+        'I' and (10,3),
+        'I' --> (8,11),
+        'I' ! (12)
+      ]
+
+proof(ejercicio06,
+      [
+      'Premisa'(1),
+      'Supuesto'(p and !r),
+      'E' and a(2),
+      'E' and b(2),
+      'Supuesto'(q),
+      'I' and (3,5),
+      'E' --> (1,6),
+      'I' and (7,4),
+      'I' --> (5,8),
+      'I' ! (9),
+      'I' --> (2,10)
+      ]
+
+proof(ejercicio07,
+      [
+      'Premisa'(1),
+      'Premisa'(2),
+      'Premisa'(3),
+      'Supuesto'(!r),
+      'Corte2'(3,4),
+      'Corte2'(2,4),
+      'Corte2'(1,5),
+      'I' and (7,6),
+      'I' --> (4,8),
+      'I' ! (9),
+      'E' ! (10)
+      ]
+
 % Incluir el resto de demostraciones
 
 rule( 'MT',
@@ -96,6 +143,28 @@ rule( 'Corte' ,
         'Supuesto'(FB),
         'I' --> (10,10),
         'E' or (1,9,11)
+    ]).
+
+rule( 'Corte2' , 
+    [
+        FA or FB,
+        !FB
+
+    ],
+    FA,
+    [
+        'Premisa'(1),
+        'Premisa'(2),
+        'Supuesto'(FB),
+        'I' and (3,2),
+        'Supuesto'(!FA),
+        'I' --> (5,4),
+        'I' ! (6),
+        'E' ! (7),
+        'I' --> (3,8),
+        'Supuesto'(FA),
+        'I' --> (10,10),
+        'E' or (1,11,9)
     ]).
 
 rule('DeMorganA', [
