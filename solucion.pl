@@ -104,6 +104,28 @@ proof(ejercicio07,
       'E' ! (10)
       ]).
 
+proof(ejercicio08,
+      [
+            'Supuesto'(!p or q),
+            'Supuesto'(q --> r),
+            'Supuesto'(p),
+            'Supuesto'(!p),
+            'I' and (3,4),
+            'Supuesto'(!r),
+            'I' --> (6,5),
+            'I' ! (7),
+            'E' ! (8),
+            'I' --> (4,9),
+            'Supuesto'(q),
+            'E' --> (2,11),
+            'I' --> (11,12),
+            'E' or (1,10,13),
+            'I' --> (3,14),
+            'I' --> (3,15),
+            'I' --> (1,16)
+      ]).
+
+
 % Incluir el resto de demostraciones
 
 rule( 'MT',
