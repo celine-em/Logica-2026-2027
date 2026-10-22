@@ -125,6 +125,22 @@ proof(ejercicio08,
             'I' -->(1,16)
       ]).
 
+proof(ejercicio09,
+      [
+            'Premisa'(1),
+            'Premisa'(2),
+            'Premisa'(3),
+            'Premisa'(4),
+            'Premisa'(5),
+            'MT'(2,3),
+            'Corte'(4,5),
+            'Supuesto'(p),
+            'I' and (8,7),
+            'E' --> (1,9),
+            'I' and (10,6),
+            'I' --> (8,11),
+            'I' ! (12)
+      ]).
 
 % Incluir el resto de demostraciones
 
